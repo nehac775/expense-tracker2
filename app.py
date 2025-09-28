@@ -20,7 +20,7 @@ description = st.sidebar.text_input("Description")
 if st.sidebar.button("Add Expense"):
     tracker.add_expense(amount, category, description)
     st.sidebar.success("Expense added!")
-    st.experimental_rerun()
+    st.rerun()
 
 # Main - Show data and visualizations
 st.subheader("All Expenses")
